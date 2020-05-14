@@ -259,6 +259,7 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
     }
 
     if (this.state.btn4 === this.state.btn5 &&
@@ -277,6 +278,8 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
+
     }
 
     if (this.state.btn7 === this.state.btn8 &&
@@ -296,6 +299,8 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
+
     }
 
     if (this.state.btn1 === this.state.btn4 &&
@@ -314,6 +319,8 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
+
     }
 
     if (this.state.btn2 === this.state.btn5 &&
@@ -333,6 +340,7 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
     }
 
     if (this.state.btn3 === this.state.btn6 &&
@@ -351,7 +359,23 @@ export default class App extends React.Component {
           greenScore: this.state.greenScore+1
         })
       }
+      this.disableAllBtns();
     }
+    
+  }
+
+  disableAllBtns=()=>{
+    this.setState({
+      btn1d: true,
+      btn2d: true,
+      btn3d: true,
+      btn4d: true,
+      btn5d: true,
+      btn6d: true,
+      btn7d: true,
+      btn8d: true,
+      btn9d: true,
+    })
   }
 
   render() {
